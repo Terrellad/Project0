@@ -1,0 +1,8 @@
+$color: #580000;
+$indent: 5em;
+div {
+   p {
+     color:$color !important;
+     text-indent: $indent !important;
+   }
+}
