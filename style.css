@@ -33,13 +33,24 @@ h2 {
   color: #940404;
 }
 
-li {
-  color: white;
+li {\
+  text-indent: 5em;
+  color: black;
 }
 
 a {
   text-decoration: underline;
   color: #4c00e6 !important;
+}
+
+div {{}
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-indent: 3em;
+  }
 }
 
 #versetext {
@@ -51,6 +62,14 @@ a {
   text-align: center
 }
 
+.questions {
+  text-align: center;
+}
+
 .underline {
   text-decoration: underline;
+}
+
+@media print {
+  .table{}
 }
