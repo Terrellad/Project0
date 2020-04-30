@@ -1,8 +1,24 @@
-$color: #580000;
+$color: #b80f1d;
+$head-color: #ccaa00;
+$headsm-color: #2c3007;
 $indent: 5em;
+$boarder: 60px;
+$font: 20;
+$spacing: 40px;
 div {
    p {
-     color:$color !important;
-     text-indent: $indent !important;
+     color:$color;
+     text-indent: $indent;
+     padding-left: $boarder;
+     padding-right: $boarder;
+     padding-bottom: $boarder;
+     font-size: $font;
+   }
+   h2 {
+     color: $head-color;
+     padding-bottom: $spacing;
+   }
+   h3 {
+     color: $headsm-color;
    }
 }
