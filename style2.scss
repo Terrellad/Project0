@@ -5,6 +5,14 @@ $indent: 5em;
 $boarder: 60px;
 $font: 20;
 $spacing: 40px;
+$weight: bold;
+$align: center;
+%message {
+  font-family: serif;
+  font-size: 20px;
+  margin: 80px;
+}
+
 div {
    p {
      color:$color;
@@ -21,4 +29,20 @@ div {
    h3 {
      color: $headsm-color;
    }
+}
+
+.error {
+  @extend %message;
+  background-color: #ffa6a6;
+  font-size: 40px !important;
+  font-weight: $weight;
+  text-align: $align;
+}
+
+.warning {
+  @extend %message;
+}
+
+.success {
+  @extend %message;
 }
