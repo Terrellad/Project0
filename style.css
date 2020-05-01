@@ -62,13 +62,16 @@ div {{}
   text-align: center
 }
 
-#pageclick {
-  text-indent: 5em;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .spacing {
   margin-left: 20;
   padding-bottom: 20;
+  text-align: center;
+  color: #9e1316 !important;
 }
 
 .questions {
@@ -79,6 +82,14 @@ div {{}
   text-decoration: underline;
 }
 
-@media print {
-  .table{}
+@media (min-width: 51%) {
+  .table{
+    margin: 50;
+  }
+}
+
+@media (max-width: 50%) {
+  .table{
+    margin: 100;
+  }
 }
