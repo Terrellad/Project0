@@ -1,6 +1,6 @@
-$color: #b80f1d;
-$head-color: #ccaa00;
-$headsm-color: #2c3007;
+$color: black;
+$head-color: #006A4E;
+$headsm-color: #00308F;
 $indent: 5em;
 $boarder: 60px;
 $font: 20;
@@ -8,6 +8,7 @@ $spacing: 40px;
 $weight: bold;
 $align: center;
 $backwarncolor: orange;
+$decor: underline;
 %message {
   font-family: serif;
   font-size: 20px;
@@ -16,7 +17,7 @@ $backwarncolor: orange;
 
 div {
    p {
-     color:$color;
+     color: $color;
      text-indent: $indent;
      padding-left: $boarder;
      padding-right: $boarder;
@@ -52,4 +53,12 @@ div {
 
 .return {
   text-align: $align;
+}
+
+.backbutton {
+  color: $color;
+  text-decoration: $decor;
+  font-weight: $weight;
+  padding-left: $boarder;
+  padding-bottom: $boarder;
 }
