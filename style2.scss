@@ -2,7 +2,7 @@ $color: black;
 $head-color: #006A4E;
 $headsm-color: #00308F;
 $indent: 5em;
-$boarder: 60px;
+$border: 60px;
 $font: 20;
 $spacing: 40px;
 $weight: bold;
@@ -16,12 +16,15 @@ $decor: underline;
 }
 
 div {
+   a {
+     padding-top: $border;
+   }
    p {
      color: $color;
      text-indent: $indent;
-     padding-left: $boarder;
-     padding-right: $boarder;
-     padding-bottom: $boarder;
+     padding-left: $border;
+     padding-right: $border;
+     padding-bottom: $border;
      font-size: $font;
    }
    h2 {
@@ -59,6 +62,10 @@ div {
   color: $color;
   text-decoration: $decor;
   font-weight: $weight;
-  padding-left: $boarder;
-  padding-bottom: $boarder;
+  padding-left: $border;
+  padding-bottom: $border;
+}
+
+.Romansroad {
+  padding-bottom: $spacing;
 }
