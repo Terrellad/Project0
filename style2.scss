@@ -8,11 +8,17 @@ $spacing: 40px;
 $weight: bold;
 $align: center;
 $backwarncolor: orange;
+$backpasscolor: lightgreen;
 $decor: underline;
+$shadow: multiply;
+$image: url(https://image.freepik.com/free-vector/wavy-smooth-lines-pattern-background_1017-14206.jpg);
+$repeat: repeat;
+$imp: !important;
+$none: 0px;
 %message {
   font-family: serif;
   font-size: 20px;
-  margin: 80px;
+  margin: 40px;
 }
 
 div {
@@ -39,7 +45,7 @@ div {
 .error {
   @extend %message;
   background-color: #ffa6a6;
-  font-size: 40px !important;
+  font-size: 40px $imp;
   font-weight: $weight;
   text-align: $align;
 }
@@ -47,15 +53,16 @@ div {
 .warning {
   @extend %message;
   background-color: $backwarncolor;
+  text-align: $align;
 }
 
 .success {
   @extend %message;
-  background-color: $backwarncolor;
 }
 
 .return {
   text-align: $align;
+  margin: $none $imp;
 }
 
 .backbutton {
